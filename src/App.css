@@ -1,0 +1,103 @@
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+.resume-sections {
+	background: lightgray;
+	flex: 1;
+}
+
+button {
+	padding: 0.25em 0.75rem;
+	border-radius: 0.75rem;
+	margin-top: 0.5rem;
+	border: none;
+	background: hsl(229, 84%, 66%);
+	color: rgb(255, 255, 255);
+	font-weight: 700;
+}
+
+button:hover {
+	background: hsl(229, 66%, 43%);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+button.confirm-type {
+	background: hsl(121, 66%, 63%);
+	color: rgb(255, 255, 255);
+}
+
+button.confirm-type:hover {
+	background: hsl(121, 66%, 43%);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.inputs-list {
+	list-style-type: none;
+}
+
+.inputs-list li {
+	display: flex;
+	gap: 0.5rem;
+}
+
+/* Resume display */
+.resume {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.resume-display {
+	background: white;
+	width: 360px;
+	height: 465px;
+	padding: 1rem;
+}
+
+.general-info h4,
+.general-info address {
+	text-align: center;
+}
+
+.resume-display section h3 {
+	border-bottom: 2px solid black;
+}
+
+.heading-date-line {
+	display: flex;
+	justify-content: space-between;
+}
+
+.experience-list,
+.education-list {
+	list-style-type: none;
+}
+
+/* Buttons control section ---------------------------- */
+.buttons-container {
+	background: rgb(57, 57, 57);
+	padding: 1rem 0.5rem;
+	display: flex;
+	gap: 1rem;
+}
+
+/* Edit and viewing boxes */
+
+.view-list {
+	display: grid;
+	gap: 1rem;
+}
+
+.view,
+.edit {
+	background: white;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.5rem;
+	max-width: 360px;
+}
