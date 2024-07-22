@@ -1,6 +1,6 @@
 # Resume Maker
 
-Type in some bsaic information about your education and professional experience to create your very own _mini_ resume!
+Type in some basic information about your education and professional experience to create your very own _mini_ resume!
 
 ## Usage
 
