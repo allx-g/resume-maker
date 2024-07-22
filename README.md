@@ -1,8 +1,20 @@
-# React + Vite
+# Resume Maker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Type in some bsaic information about your education and professional experience to create your very own _mini_ resume!
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit [this link](resume-maker-eta.vercel.app) to make _your_ mini resume.
+
+## Tools
+
+This project was built using the following technologies:
+
+-   Front-end: `HTML` `CSS` `React.js`
+-   Hosting: `Vercel`
+
+The goal was to practice utilizing React's useState hook for handling dynamic state. Specifically, it allows for dynamic creation of HTML elements which previously had to be done manually via vanilla-JS query selectors and event listeners.
+
+## Contributing
+
+Pull requests are welcome. For changes, please open an issue first to discuss what you would like to change.
