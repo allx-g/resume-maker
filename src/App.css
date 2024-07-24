@@ -23,6 +23,21 @@ h1 {
 	background: hsl(0, 0%, 77%);
 }
 
+button {
+	padding: 0.5rem;
+	border: none;
+	background: hsl(211, 100%, 75%);
+	color: rgb(31, 31, 31);
+	font-weight: 700;
+	box-shadow: 0 1px 2px 1px hsla(0, 0%, 0%, 0.204);
+}
+
+button:hover {
+	background: hsl(211, 48%, 55%);
+	color: black;
+	cursor: pointer;
+}
+
 /* Navigation Menu */
 
 nav {
@@ -40,7 +55,6 @@ nav ul {
 
 nav ul li button {
 	min-width: 7rem;
-	padding: 0.5rem;
 	border-radius: 0.5rem;
 }
 
