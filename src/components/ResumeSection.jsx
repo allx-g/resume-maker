@@ -1,14 +1,9 @@
 import { useState } from "react";
 
 function ResumeSection({ general, education, experience }) {
-	const handleCounterClick = () => {
-		const newClicks = clicks + 1;
-		setClicks(newClicks);
-	};
-
 	const educationList = education.map(
 		({ type, school, startDate, endDate }) => (
-			<li>
+			<li className="view-list">
 				<div className="heading-date-line">
 					<h4>{type}</h4>
 					<span>
@@ -22,7 +17,7 @@ function ResumeSection({ general, education, experience }) {
 
 	const experienceList = experience.map(
 		({ role, company, endDate, startDate, type }) => (
-			<li key={company + role}>
+			<li className="view-list">
 				<div className="heading-date-line">
 					<h4>{role}</h4>
 					<span>
@@ -36,21 +31,21 @@ function ResumeSection({ general, education, experience }) {
 	);
 	return (
 		<section className="resume">
-			<h2>Your resume</h2>
-			<div className="resume-display">
+			<h2>your resume</h2>
+			<div className="created-resume-container">
 				<section className="general-info">
 					<h4>{general.name}</h4>
 					<address>
 						{general.phone} | {general.email}
 					</address>
 				</section>
-				<section className="education-info">
+				<section className="info-list-container">
 					<h3>Education</h3>
-					<ul className="education-list">{educationList}</ul>
+					<ul className="info-list">{educationList}</ul>
 				</section>
-				<section className="education-info">
+				<section className="info-list-container">
 					<h3>Experience</h3>
-					<ul className="experience-list">{experienceList}</ul>
+					<ul className="info-list">{experienceList}</ul>
 				</section>
 			</div>
 		</section>

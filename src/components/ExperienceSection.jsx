@@ -5,7 +5,7 @@ function ExperienceSection({ data, setData }) {
 	const experiencesList = data.experience.map((experience) => (
 		<li>
 			<Experience
-				key={`${experience.role} ${experience.company}`}
+				key={`${experience.role}-${experience.company}`}
 				data={data}
 				experience={experience}
 				setData={setData}
@@ -31,8 +31,8 @@ function ExperienceSection({ data, setData }) {
 	return (
 		<section className="experience">
 			<h2>Experience</h2>
-			<ul>{experiencesList}</ul>
-			<button type="button" onClick={handleAdd}>
+			<ul className="info-cards-list">{experiencesList}</ul>
+			<button className="add-type" type="button" onClick={handleAdd}>
 				Add experience
 			</button>
 		</section>

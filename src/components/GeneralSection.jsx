@@ -40,11 +40,11 @@ function GeneralSection({ data, general, setData }) {
 	function renderGeneralInfo() {
 		if (editMode) {
 			return (
-				<div className="general-box edit">
+				<div className="general-input-container edit">
 					<p>
 						<strong>Enter general information</strong>
 					</p>
-					<ul className="inputs-list">
+					<ul className="general-inputs-list">
 						<li>
 							<label htmlFor="name">Full name</label>
 							<input
@@ -87,11 +87,15 @@ function GeneralSection({ data, general, setData }) {
 			);
 		} else {
 			return (
-				<div className="general-box view">
+				<div className="general-view-container view">
 					<h3>{name}</h3>
 					<p>{phone}</p>
 					<p>{email}</p>
-					<button type="button" onClick={handleClick(true)}>
+					<button
+						className="edit-type"
+						type="button"
+						onClick={handleClick(true)}
+					>
 						Edit
 					</button>
 				</div>

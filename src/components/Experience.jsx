@@ -60,7 +60,7 @@ function Experience({ data, experience, setData, index }) {
 
 	if (editMode) {
 		return (
-			<div className="edit">
+			<div className="info-card edit">
 				<p>
 					<strong>Enter experience details</strong>
 				</p>
@@ -130,12 +130,12 @@ function Experience({ data, experience, setData, index }) {
 		);
 	} else {
 		return (
-			<div className="view">
+			<div className="info-card view">
 				<h3>{role}</h3>
 				<p>{company}</p>
 				<p>{type}</p>
 				<p>
-					{startDate} -- {endDate}
+					{startDate} &mdash; {endDate}
 				</p>
 				<button type="button" onClick={handleClick(true)}>
 					Edit

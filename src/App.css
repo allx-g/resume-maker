@@ -1,0 +1,48 @@
+/* OVERALL LAYOUT STYLING */
+#root {
+	display: flex;
+	flex-direction: column;
+}
+.content-container {
+	flex: 1;
+	display: flex;
+	background: hsl(0, 0%, 77%);
+}
+
+main {
+	flex: 1;
+	margin: 1rem;
+}
+
+main > * {
+	height: 100%;
+	background: hsl(0, 0%, 77%);
+}
+
+h1 {
+	background: hsl(0, 0%, 77%);
+}
+
+/* Navigation Menu */
+
+nav {
+	border-radius: 0 0.5rem 0 0;
+	background: white;
+	padding: 1rem;
+}
+
+nav ul {
+	display: grid;
+	gap: 1rem;
+	border-radius: 1rem;
+	list-style-type: none;
+}
+
+nav ul li button {
+	min-width: 7rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+}
+
+nav ul li button:hover {
+}

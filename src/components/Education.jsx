@@ -59,7 +59,7 @@ function Education({ data, education, setData, index }) {
 
 	if (editMode) {
 		return (
-			<div className="edit">
+			<div className="info-card edit">
 				<p>Enter education details</p>
 				<ul className="inputs-list">
 					<label htmlFor="type">Type of school</label>
@@ -109,7 +109,7 @@ function Education({ data, education, setData, index }) {
 		);
 	} else {
 		return (
-			<div className="view">
+			<div className="info-card view">
 				<h3>{type}</h3>
 				<p>{school}</p>
 				<p>

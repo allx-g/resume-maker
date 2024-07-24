@@ -32,7 +32,7 @@ function EducationSection({ data, setData }) {
 		<section className="education">
 			<h2>Education</h2>
 			<ul className="view-list">{educationsList}</ul>
-			<button type="button" onClick={handleAdd}>
+			<button className="add-type" type="button" onClick={handleAdd}>
 				Add education
 			</button>
 		</section>

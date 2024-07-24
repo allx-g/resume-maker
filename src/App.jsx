@@ -31,13 +31,15 @@ function App() {
 		setActiveContent(buttonContent);
 	};
 	const buttonsList = sections.map((section) => (
-		<button
-			type="button"
-			key={section.content}
-			onClick={onButtonClick(section.content)}
-		>
-			{section.content}
-		</button>
+		<li>
+			<button
+				type="button"
+				key={section.content}
+				onClick={onButtonClick(section.content)}
+			>
+				{section.content}
+			</button>
+		</li>
 	));
 
 	const renderCurrentContent = (activeContent) => {
@@ -67,11 +69,15 @@ function App() {
 
 	return (
 		<>
-			<h1>Mini-resume maker</h1>
-			<div className="resume-sections">
-				{renderCurrentContent(activeContent)}
+			<h1>
+				<span class="mini-resume-text">mini resume</span> maker
+			</h1>
+			<div className="content-container">
+				<nav className="buttons-container">
+					<ul>{buttonsList}</ul>
+				</nav>
+				<main>{renderCurrentContent(activeContent)}</main>
 			</div>
-			<div className="buttons-container">{buttonsList}</div>
 		</>
 	);
 }
