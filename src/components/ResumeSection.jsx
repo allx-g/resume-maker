@@ -31,7 +31,6 @@ function ResumeSection({ general, education, experience }) {
 	);
 	return (
 		<section className="resume">
-			<h2>your resume</h2>
 			<div className="created-resume-container">
 				<section className="general-info">
 					<h4>{general.name}</h4>

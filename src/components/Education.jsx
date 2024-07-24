@@ -62,38 +62,46 @@ function Education({ data, education, setData, index }) {
 			<div className="info-card edit">
 				<p>Enter education details</p>
 				<ul className="inputs-list">
-					<label htmlFor="type">Type of school</label>
-					<input
-						type="text"
-						value={type}
-						onChange={handleTypeChange}
-						placeholder="Type of school"
-						id="type"
-					/>
-					<label htmlFor="school">School name</label>
-					<input
-						type="text"
-						value={school}
-						onChange={handleSchoolChange}
-						placeholder="Name of school"
-						id="school"
-					/>
-					<label htmlFor="start-date">Start date</label>
-					<input
-						type="text"
-						value={startDate}
-						onChange={handleStartDateChange}
-						placeholder="Start date at school"
-						id="start-date"
-					/>
-					<label htmlFor="end-date">End date</label>
-					<input
-						type="text"
-						value={endDate}
-						onChange={handleEndDateChange}
-						placeholder="End date at school"
-						id="end-date"
-					/>
+					<li>
+						<label htmlFor="type">Type of school</label>
+						<input
+							type="text"
+							value={type}
+							onChange={handleTypeChange}
+							placeholder="Type of school"
+							id="type"
+						/>
+					</li>
+					<li>
+						<label htmlFor="school">School name</label>
+						<input
+							type="text"
+							value={school}
+							onChange={handleSchoolChange}
+							placeholder="Name of school"
+							id="school"
+						/>
+					</li>
+					<li>
+						<label htmlFor="start-date">Start date</label>
+						<input
+							type="text"
+							value={startDate}
+							onChange={handleStartDateChange}
+							placeholder="Start date at school"
+							id="start-date"
+						/>
+					</li>
+					<li>
+						<label htmlFor="end-date">End date</label>
+						<input
+							type="text"
+							value={endDate}
+							onChange={handleEndDateChange}
+							placeholder="End date at school"
+							id="end-date"
+						/>
+					</li>
 				</ul>
 				<button
 					className="confirm-type"
