@@ -104,14 +104,26 @@ function Education({ data, education, setData, index }) {
 					</li>
 				</ul>
 				<button
-					className="confirm-type"
+					className="action-type confirm-type"
 					type="button"
 					onClick={handleClick(false)}
 				>
-					Confirm
+					<img
+						className="icon-image"
+						src="../src/assets/icons/check-1.png"
+						alt="check icon"
+					/>
 				</button>
-				<button type="button" onClick={handleDelete}>
-					Delete
+				<button
+					className="action-type delete-type"
+					type="button"
+					onClick={handleDelete}
+				>
+					<img
+						className="icon-image"
+						src="../src/assets/icons/trash-bin.png"
+						alt="trash icon"
+					/>
 				</button>
 			</div>
 		);
@@ -123,8 +135,16 @@ function Education({ data, education, setData, index }) {
 				<p>
 					{startDate} -- {endDate}
 				</p>
-				<button type="button" onClick={handleClick(true)}>
-					Edit
+				<button
+					className="action-type edit-type"
+					type="button"
+					onClick={handleClick(true)}
+				>
+					<img
+						className="icon-image"
+						src="../src/assets/icons/pencil.png"
+						alt="pencil icon"
+					/>
 				</button>
 			</div>
 		);

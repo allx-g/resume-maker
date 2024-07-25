@@ -48,6 +48,24 @@ button:active {
 	background-color: hsl(209, 67%, 17%);
 	box-shadow: 0 1px 5px 1px hsla(0, 0%, 0%, 0.204) inset;
 }
+
+button.action-type {
+	padding: 0.5rem;
+}
+
+button.confirm-type {
+	background: green;
+}
+
+button.delete-type {
+	background: rgb(188, 42, 42);
+}
+
+.icon-image {
+	width: 1rem;
+	height: auto;
+	filter: invert(1);
+}
 /* Navigation Menu */
 
 nav {
@@ -98,4 +116,12 @@ nav ul li button {
 .heading-date-line {
 	display: flex;
 	justify-content: space-between;
+}
+
+/* GENERAL SECTION
+================================================ */
+.general-view-container,
+.general-input-container {
+	background: white;
+	padding: 1rem;
 }

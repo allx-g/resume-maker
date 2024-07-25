@@ -76,11 +76,15 @@ function GeneralSection({ data, general, setData }) {
 							/>
 						</li>
 						<button
-							className="confirm-type"
+							className="action-type confirm-type"
 							type="button"
 							onClick={handleClick(false)}
 						>
-							Confirm
+							<img
+								className="icon-image"
+								src="../src/assets/icons/check-1.png"
+								alt="check icon"
+							/>
 						</button>
 					</ul>
 				</div>
@@ -92,11 +96,15 @@ function GeneralSection({ data, general, setData }) {
 					<p>{phone}</p>
 					<p>{email}</p>
 					<button
-						className="edit-type"
+						className="action-type edit-type"
 						type="button"
 						onClick={handleClick(true)}
 					>
-						Edit
+						<img
+							className="icon-image"
+							src="../src/assets/icons/pencil.png"
+							alt="pencil icon"
+						/>
 					</button>
 				</div>
 			);
