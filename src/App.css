@@ -28,6 +28,19 @@ ul {
 	list-style-type: none;
 }
 
+section div button {
+	margin-top: 1rem;
+}
+
+input[type="text"] {
+	padding: 0.1rem;
+}
+
+.inputs-list {
+	display: grid;
+	gap: 0.5rem;
+}
+
 button {
 	padding: 0.65rem 1rem;
 	border-radius: 0.3rem;
@@ -57,8 +70,20 @@ button.confirm-type {
 	background: green;
 }
 
+button.confirm-type:hover {
+	background: rgb(4, 77, 4);
+}
+
+button.add-type {
+	margin-top: 1rem;
+}
+
 button.delete-type {
 	background: rgb(188, 42, 42);
+}
+
+button.delete-type:hover {
+	background: rgb(94, 14, 14);
 }
 
 .icon-image {
@@ -66,6 +91,27 @@ button.delete-type {
 	height: auto;
 	filter: invert(1);
 }
+
+main > section:not(section.resume) {
+	background: white;
+	box-shadow: 0 0px 10px 10px white;
+	margin: 0 1rem;
+	padding: 0.5rem 1rem;
+}
+
+section h2 {
+	border-bottom: 2px solid black;
+}
+
+.action-buttons-list {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.action-buttons-list > button {
+	flex: 1;
+}
+
 /* Navigation Menu */
 
 nav {
@@ -120,8 +166,9 @@ nav ul li button {
 
 /* GENERAL SECTION
 ================================================ */
-.general-view-container,
-.general-input-container {
-	background: white;
+.info-card {
 	padding: 1rem;
+	border-bottom: 1px dashed black;
+	display: grid;
+	gap: 0.5rem;
 }

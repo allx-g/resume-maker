@@ -70,7 +70,7 @@ function App() {
 	return (
 		<>
 			<h1>
-				<span class="mini-resume-text">mini resume</span> maker
+				<span class="mini-resume-text">Mini Resume</span> Maker
 			</h1>
 			<div className="content-container">
 				<nav className="buttons-container">

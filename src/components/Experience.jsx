@@ -116,28 +116,30 @@ function Experience({ data, experience, setData, index }) {
 						/>
 					</li>
 				</ul>
-				<button
-					className="action-type confirm-type"
-					type="button"
-					onClick={handleClick(false)}
-				>
-					<img
-						className="icon-image"
-						src="../src/assets/icons/check-1.png"
-						alt="check icon"
-					/>
-				</button>
-				<button
-					className="action-type delete-type"
-					type="button"
-					onClick={handleDelete}
-				>
-					<img
-						className="icon-image"
-						src="../src/assets/icons/trash-bin.png"
-						alt="check icon"
-					/>
-				</button>
+				<div className="action-buttons-list">
+					<button
+						className="action-type confirm-type"
+						type="button"
+						onClick={handleClick(false)}
+					>
+						<img
+							className="icon-image"
+							src="../src/assets/check-1.png"
+							alt="check icon"
+						/>
+					</button>
+					<button
+						className="action-type delete-type"
+						type="button"
+						onClick={handleDelete}
+					>
+						<img
+							className="icon-image"
+							src="../src/assets/trash-bin.png"
+							alt="check icon"
+						/>
+					</button>
+				</div>
 			</div>
 		);
 	} else {
@@ -147,7 +149,7 @@ function Experience({ data, experience, setData, index }) {
 				<p>{company}</p>
 				<p>{type}</p>
 				<p>
-					{startDate} &mdash; {endDate}
+					{startDate}&mdash;{endDate}
 				</p>
 				<button
 					className="action-type edit-type"
@@ -156,7 +158,7 @@ function Experience({ data, experience, setData, index }) {
 				>
 					<img
 						className="icon-image"
-						src="../src/assets/icons/pencil.png"
+						src="../src/assets/pencil.png"
 						alt="pencil icon"
 					/>
 				</button>

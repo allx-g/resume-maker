@@ -60,7 +60,9 @@ function Education({ data, education, setData, index }) {
 	if (editMode) {
 		return (
 			<div className="info-card edit">
-				<p>Enter education details</p>
+				<p>
+					<strong>Enter education details</strong>
+				</p>
 				<ul className="inputs-list">
 					<li>
 						<label htmlFor="type">Type of school</label>
@@ -103,28 +105,30 @@ function Education({ data, education, setData, index }) {
 						/>
 					</li>
 				</ul>
-				<button
-					className="action-type confirm-type"
-					type="button"
-					onClick={handleClick(false)}
-				>
-					<img
-						className="icon-image"
-						src="../src/assets/icons/check-1.png"
-						alt="check icon"
-					/>
-				</button>
-				<button
-					className="action-type delete-type"
-					type="button"
-					onClick={handleDelete}
-				>
-					<img
-						className="icon-image"
-						src="../src/assets/icons/trash-bin.png"
-						alt="trash icon"
-					/>
-				</button>
+				<div className="action-buttons-list">
+					<button
+						className="action-type confirm-type"
+						type="button"
+						onClick={handleClick(false)}
+					>
+						<img
+							className="icon-image"
+							src="../src/assets/check-1.png"
+							alt="check icon"
+						/>
+					</button>
+					<button
+						className="action-type delete-type"
+						type="button"
+						onClick={handleDelete}
+					>
+						<img
+							className="icon-image"
+							src="../src/assets/trash-bin.png"
+							alt="trash icon"
+						/>
+					</button>
+				</div>
 			</div>
 		);
 	} else {
@@ -133,7 +137,7 @@ function Education({ data, education, setData, index }) {
 				<h3>{type}</h3>
 				<p>{school}</p>
 				<p>
-					{startDate} -- {endDate}
+					{startDate}—{endDate}
 				</p>
 				<button
 					className="action-type edit-type"
@@ -142,7 +146,7 @@ function Education({ data, education, setData, index }) {
 				>
 					<img
 						className="icon-image"
-						src="../src/assets/icons/pencil.png"
+						src="../src/assets/pencil.png"
 						alt="pencil icon"
 					/>
 				</button>

@@ -32,8 +32,16 @@ function EducationSection({ data, setData }) {
 		<section className="education">
 			<h2>Education</h2>
 			<ul className="view-list">{educationsList}</ul>
-			<button className="add-type" type="button" onClick={handleAdd}>
-				Add education
+			<button
+				className="action-type add-type"
+				type="button"
+				onClick={handleAdd}
+			>
+				<img
+					className="icon-image"
+					src="../src/assets/plus.png"
+					alt=""
+				/>
 			</button>
 		</section>
 	);

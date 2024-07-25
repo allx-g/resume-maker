@@ -40,11 +40,11 @@ function GeneralSection({ data, general, setData }) {
 	function renderGeneralInfo() {
 		if (editMode) {
 			return (
-				<div className="general-input-container edit">
+				<div className="info-card edit">
 					<p>
 						<strong>Enter general information</strong>
 					</p>
-					<ul className="general-inputs-list">
+					<ul className="inputs-list">
 						<li>
 							<label htmlFor="name">Full name</label>
 							<input
@@ -82,7 +82,7 @@ function GeneralSection({ data, general, setData }) {
 						>
 							<img
 								className="icon-image"
-								src="../src/assets/icons/check-1.png"
+								src="../src/assets/check-1.png"
 								alt="check icon"
 							/>
 						</button>
@@ -91,7 +91,7 @@ function GeneralSection({ data, general, setData }) {
 			);
 		} else {
 			return (
-				<div className="general-view-container view">
+				<div className="info-card view">
 					<h3>{name}</h3>
 					<p>{phone}</p>
 					<p>{email}</p>
@@ -102,8 +102,8 @@ function GeneralSection({ data, general, setData }) {
 					>
 						<img
 							className="icon-image"
-							src="../src/assets/icons/pencil.png"
-							alt="pencil icon"
+							src="../src/assets/pencil.png"
+							alt="Edit"
 						/>
 					</button>
 				</div>

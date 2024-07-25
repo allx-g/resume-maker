@@ -32,8 +32,16 @@ function ExperienceSection({ data, setData }) {
 		<section className="experience">
 			<h2>Experience</h2>
 			<ul className="info-cards-list">{experiencesList}</ul>
-			<button className="add-type" type="button" onClick={handleAdd}>
-				Add experience
+			<button
+				className="action-type add-type"
+				type="button"
+				onClick={handleAdd}
+			>
+				<img
+					className="icon-image"
+					src="../src/assets/plus.png"
+					alt=""
+				/>
 			</button>
 		</section>
 	);
