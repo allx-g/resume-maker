@@ -29,7 +29,7 @@ ul {
 }
 
 button {
-	padding: 0.65rem 0;
+	padding: 0.65rem 1rem;
 	border-radius: 0.3rem;
 	border: none;
 	background: hsl(231, 66%, 58%);
@@ -39,11 +39,15 @@ button {
 }
 
 button:hover {
-	background: hsl(211, 48%, 55%);
-	color: black;
+	background: hsl(210, 69%, 19%);
+	color: rgb(232, 232, 232);
 	cursor: pointer;
 }
 
+button:active {
+	background-color: hsl(209, 67%, 17%);
+	box-shadow: 0 1px 5px 1px hsla(0, 0%, 0%, 0.204) inset;
+}
 /* Navigation Menu */
 
 nav {
@@ -60,4 +64,38 @@ nav ul {
 
 nav ul li button {
 	min-width: 7rem;
+}
+
+/* RESUME SECTION
+================================================ */
+.resume {
+	display: flex;
+	justify-content: center;
+	font-size: 0.95rem;
+}
+
+.created-resume-container {
+	padding: 2rem;
+	aspect-ratio: 8.5 / 11;
+	background: white;
+	height: 600px;
+	box-shadow: 0 1px 10px 2px hsla(0, 0%, 0%, 0.204);
+}
+
+.general-info h4,
+.general-info address {
+	text-align: center;
+}
+
+.info-list-container {
+	margin-top: 1.5rem;
+}
+
+.info-list-container h3 {
+	border-bottom: 2px solid black;
+}
+
+.heading-date-line {
+	display: flex;
+	justify-content: space-between;
 }

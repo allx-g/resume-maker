@@ -1,14 +1,27 @@
 import { useState } from "react";
 
 function ResumeSection({ general, education, experience }) {
+	function renderDateLine(startDate, endDate) {
+		if (startDate && endDate) {
+			return (
+				<span>
+					{startDate}—{endDate}
+				</span>
+			);
+		} else if (startDate) {
+			return <span>{startDate}—Present</span>;
+		} else if (endDate) {
+			return <span>n/a—{endDate}</span>;
+		} else {
+			return <span></span>;
+		}
+	}
 	const educationList = education.map(
 		({ type, school, startDate, endDate }) => (
 			<li className="view-list">
 				<div className="heading-date-line">
 					<h4>{type}</h4>
-					<span>
-						{startDate}--{endDate}
-					</span>
+					{renderDateLine(startDate, endDate)}
 				</div>
 				<p>{school}</p>
 			</li>
@@ -21,7 +34,7 @@ function ResumeSection({ general, education, experience }) {
 				<div className="heading-date-line">
 					<h4>{role}</h4>
 					<span>
-						{startDate}---{endDate}
+						{startDate}—{endDate}
 					</span>
 				</div>
 				<p>{company}</p>
