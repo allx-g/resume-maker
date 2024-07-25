@@ -9,6 +9,12 @@
 	background: hsl(229, 15%, 77%);
 }
 
+@media (max-width: 600px) {
+	.content-container {
+		flex-direction: column;
+	}
+}
+
 main {
 	flex: 1;
 	margin: 1rem;
@@ -126,6 +132,13 @@ nav ul {
 	border-radius: 1rem;
 }
 
+@media (max-width: 600px) {
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
 nav ul li button {
 	min-width: 7rem;
 }
@@ -142,7 +155,7 @@ nav ul li button {
 	padding: 2rem;
 	aspect-ratio: 8.5 / 11;
 	background: white;
-	height: 600px;
+	max-height: 600px;
 	box-shadow: 0 1px 10px 2px hsla(0, 0%, 0%, 0.204);
 }
 
