@@ -40,7 +40,7 @@ function EducationSection({ data, setData }) {
 				<img
 					className="icon-image"
 					src="../src/assets/plus.png"
-					alt=""
+					alt="New education"
 				/>
 			</button>
 		</section>

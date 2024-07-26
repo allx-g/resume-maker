@@ -125,7 +125,7 @@ function Experience({ data, experience, setData, index }) {
 						<img
 							className="icon-image"
 							src="../src/assets/check-1.png"
-							alt="check icon"
+							alt="Confirm"
 						/>
 					</button>
 					<button
@@ -136,7 +136,7 @@ function Experience({ data, experience, setData, index }) {
 						<img
 							className="icon-image"
 							src="../src/assets/trash-bin.png"
-							alt="check icon"
+							alt="Delete"
 						/>
 					</button>
 				</div>
@@ -159,7 +159,7 @@ function Experience({ data, experience, setData, index }) {
 					<img
 						className="icon-image"
 						src="../src/assets/pencil.png"
-						alt="pencil icon"
+						alt="Edit"
 					/>
 				</button>
 			</div>

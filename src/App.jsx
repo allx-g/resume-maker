@@ -37,7 +37,7 @@ function App() {
 				key={section.content}
 				onClick={onButtonClick(section.content)}
 			>
-				{section.content}
+				View {section.content}
 			</button>
 		</li>
 	));

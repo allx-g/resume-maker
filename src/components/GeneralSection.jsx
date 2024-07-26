@@ -85,7 +85,7 @@ function GeneralSection({ data, general, setData }) {
 							<img
 								className="icon-image"
 								src="../src/assets/check-1.png"
-								alt="check icon"
+								alt="Confirm"
 							/>
 						</button>
 					</ul>
