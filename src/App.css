@@ -47,6 +47,11 @@ input[type="text"] {
 	gap: 0.5rem;
 }
 
+.inputs-list li {
+	display: flex;
+	gap: 0.5rem;
+}
+
 button {
 	padding: 0.65rem 1rem;
 	border-radius: 0.3rem;

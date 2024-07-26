@@ -8,9 +8,9 @@ import ResumeSection from "./components/ResumeSection.jsx";
 function App() {
 	const initalData = {
 		general: {
-			name: "Your Name",
-			phone: "123-456-7890",
-			email: "example@email.com",
+			name: null,
+			phone: null,
+			email: null,
 		},
 		education: [],
 		experience: [],

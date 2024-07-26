@@ -70,7 +70,7 @@ function Education({ data, education, setData, index }) {
 							type="text"
 							value={type}
 							onChange={handleTypeChange}
-							placeholder="Type of school"
+							placeholder="e.g. College"
 							id="type"
 						/>
 					</li>
@@ -80,27 +80,27 @@ function Education({ data, education, setData, index }) {
 							type="text"
 							value={school}
 							onChange={handleSchoolChange}
-							placeholder="Name of school"
+							placeholder="Name"
 							id="school"
 						/>
 					</li>
 					<li>
-						<label htmlFor="start-date">Start date</label>
+						<label htmlFor="start-date">Start year</label>
 						<input
 							type="text"
 							value={startDate}
 							onChange={handleStartDateChange}
-							placeholder="Start date at school"
+							placeholder="Year"
 							id="start-date"
 						/>
 					</li>
 					<li>
-						<label htmlFor="end-date">End date</label>
+						<label htmlFor="end-date">End year</label>
 						<input
 							type="text"
 							value={endDate}
 							onChange={handleEndDateChange}
-							placeholder="End date at school"
+							placeholder="Year"
 							id="end-date"
 						/>
 					</li>

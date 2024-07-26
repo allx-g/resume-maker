@@ -71,7 +71,7 @@ function Experience({ data, experience, setData, index }) {
 							type="text"
 							value={role}
 							onChange={handleRoleChange}
-							placeholder="Role title"
+							placeholder="e.g. Manager"
 							id="role"
 						/>
 					</li>
@@ -81,7 +81,7 @@ function Experience({ data, experience, setData, index }) {
 							type="text"
 							value={company}
 							onChange={handleCompanyChange}
-							placeholder="Company name"
+							placeholder="Name"
 							id="company"
 						/>
 					</li>
@@ -91,27 +91,27 @@ function Experience({ data, experience, setData, index }) {
 							type="text"
 							value={type}
 							onChange={handleTypeChange}
-							placeholder="Job type (e.g. part-time)"
+							placeholder="e.g. Part Time"
 							id="type"
 						/>
 					</li>
 					<li>
-						<label htmlFor="start-date">Start date</label>
+						<label htmlFor="start-date">Start year</label>
 						<input
 							type="text"
 							value={startDate}
 							onChange={handleStartDateChange}
-							placeholder="Start date at company"
+							placeholder="Year"
 							id="start-date"
 						/>
 					</li>
 					<li>
-						<label htmlFor="end-date">End date</label>
+						<label htmlFor="end-date">End year</label>
 						<input
 							type="text"
 							value={endDate}
 							onChange={handleEndDateChange}
-							placeholder="End date at company"
+							placeholder="Year"
 							id="end-date"
 						/>
 					</li>

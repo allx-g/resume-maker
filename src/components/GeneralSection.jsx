@@ -42,7 +42,9 @@ function GeneralSection({ data, general, setData }) {
 			return (
 				<div className="info-card edit">
 					<p>
-						<strong>Enter general information</strong>
+						<strong>
+							Enter general information about yourself
+						</strong>
 					</p>
 					<ul className="inputs-list">
 						<li>
@@ -51,7 +53,7 @@ function GeneralSection({ data, general, setData }) {
 								type="text"
 								value={name}
 								onChange={handleNameChange}
-								placeholder="Full name"
+								placeholder="e.g. John Doe"
 								id="name"
 							/>
 						</li>
@@ -61,7 +63,7 @@ function GeneralSection({ data, general, setData }) {
 								type="text"
 								value={phone}
 								onChange={handlePhoneChange}
-								placeholder="Phone number"
+								placeholder="XXX-XXX-XXXX"
 								id="phone"
 							/>
 						</li>
@@ -71,7 +73,7 @@ function GeneralSection({ data, general, setData }) {
 								type="text"
 								value={email}
 								onChange={handleEmailChange}
-								placeholder="Email address"
+								placeholder="example@email.com"
 								id="email"
 							/>
 						</li>
