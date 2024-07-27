@@ -33,9 +33,7 @@ function ResumeSection({ general, education, experience }) {
 			<li className="view-list">
 				<div className="heading-date-line">
 					<h4>{role}</h4>
-					<span>
-						{startDate}—{endDate}
-					</span>
+					{renderDateLine(startDate, endDate)}
 				</div>
 				<p>{company}</p>
 				<p>{type}</p>

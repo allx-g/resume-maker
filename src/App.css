@@ -123,6 +123,10 @@ section h2 {
 	flex: 1;
 }
 
+image {
+	color: rgb(232, 232, 232);
+}
+
 /* Navigation Menu */
 
 nav {
