@@ -113,7 +113,7 @@ function Education({ data, education, setData, index }) {
 					>
 						<img
 							className="icon-image"
-							src="../src/assets/check-1.png"
+							src="/check-1.png"
 							alt="Confirm"
 						/>
 					</button>
@@ -124,7 +124,7 @@ function Education({ data, education, setData, index }) {
 					>
 						<img
 							className="icon-image"
-							src="../src/assets/trash-bin.png"
+							src="/trash-bin.png"
 							alt="Delete"
 						/>
 					</button>
@@ -144,11 +144,7 @@ function Education({ data, education, setData, index }) {
 					type="button"
 					onClick={handleClick(true)}
 				>
-					<img
-						className="icon-image"
-						src="../src/assets/pencil.png"
-						alt="Edit"
-					/>
+					<img className="icon-image" src="/pencil.png" alt="Edit" />
 				</button>
 			</div>
 		);

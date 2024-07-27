@@ -39,7 +39,7 @@ function ExperienceSection({ data, setData }) {
 			>
 				<img
 					className="icon-image"
-					src="../src/assets/plus.png"
+					src="/plus.png"
 					alt="Add experience"
 				/>
 			</button>
